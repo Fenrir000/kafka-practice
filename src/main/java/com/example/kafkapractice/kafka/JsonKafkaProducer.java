@@ -21,7 +21,7 @@ public class JsonKafkaProducer {
     public void sendMessage(Book book){
         log.info("Message sent: "+book.toString());
         Message<Book> message= MessageBuilder.withPayload(book)
-                .setHeader(KafkaHeaders.TOPIC,"newTopic")
+                .setHeader(KafkaHeaders.TOPIC,"newTopicJson")
                 .build();
         kafkaTemplate.send(message);
     }
