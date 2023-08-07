@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/kafka")
+//controller that will create messages for newTopic
 public class MessageController {
     private KafkaProducer kafkaProducer;
     @Autowired

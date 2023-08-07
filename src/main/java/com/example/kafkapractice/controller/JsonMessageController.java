@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/jsonProduce")
+//controller that will create messages for newTopicJson
 public class JsonMessageController {
     private JsonKafkaProducer jsonKafkaProducer;
 
